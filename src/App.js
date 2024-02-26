@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+//react functional components
+//import -> librery,const,mathods,controllers,modules
+//1.default import ->modules.librery
+//2.const import->const,methods,controlles,librery(typed/named){}
+import React from "react"
+import "./App.css"
+import Home from "./component/Home"
+import Contact from "./component/contact"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+//compnent body(jsx)
+function App(props){
+  return(
+    <div>
+      <h1 className="title">React Functional components</h1>
+      <Home/>
+      <Contact/>
     </div>
-  );
+  )
 }
 
-export default App;
+//export=>default
+export default App
